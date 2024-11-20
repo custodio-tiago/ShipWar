@@ -14,7 +14,7 @@ FONT = pygame.font.Font(None, 36)
 
 # Inicialização
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Jogo Simples")
+pygame.display.set_caption("Ship War 1.0")
 clock = pygame.time.Clock()
 
 # Fundo do jogo
@@ -51,9 +51,9 @@ def main():
         if not game_over:
             player.move(keys, WIDTH, HEIGHT)
 
-        # Spawn de inimigos
+        # Spawn de inimigos - a frequência de spawn foi dobrada
         spawn_timer += delta_time
-        if spawn_timer >= random.randint(1000, 3000) and len(enemies) < 15:
+        if spawn_timer >= random.randint(500, 1500) and len(enemies) < 30:  # Dobrei a frequência de spawn
             spawn_timer = 0
             enemies.append(Enemy(WIDTH, HEIGHT, enemy_images))  # Não é mais necessário passar "direction", o inimigo decide isso
 
@@ -70,7 +70,7 @@ def main():
                 enemy.move()
                 if enemy.rect.right < 0 or enemy.rect.left > WIDTH:
                     enemies.remove(enemy)
-                if random.random() < 0.01:
+                if random.random() < 0.05:  # Dobrei a chance de inimigos atirarem
                     enemy_bullets.append(enemy.shoot())
 
             # Atualizar tiros dos inimigos
