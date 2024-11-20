@@ -70,7 +70,7 @@ def main():
                 enemy.move()
                 if enemy.rect.right < 0 or enemy.rect.left > WIDTH:
                     enemies.remove(enemy)
-                if random.random() < 0.05:  # Dobrei a chance de inimigos atirarem
+                if random.random() < enemy.shoot_chance:  # Chance de inimigo atirar baseada no tipo
                     enemy_bullets.append(enemy.shoot())
 
             # Atualizar tiros dos inimigos
@@ -85,7 +85,7 @@ def main():
                     if bullet.rect.colliderect(enemy.rect):
                         bullets.remove(bullet)
                         enemies.remove(enemy)
-                        score += 100
+                        score += enemy.points  # Adicionando pontos conforme o tipo do inimigo
 
             for enemy in enemies:
                 if player.rect.colliderect(enemy.rect):
