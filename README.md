@@ -1,7 +1,7 @@
 # ShipWar
 Jogo de naves que fiz com Python (pygame)
   
-![image](https://github.com/user-attachments/assets/d34b11b8-ec96-4d77-9c63-c245fde2cb5c)
+![image](https://github.com/user-attachments/assets/6f83dc7a-8aad-4039-973f-0bb5047bb322)
 
 ## Características
 - movimento da nave do jogador com as setas do teclado para 4 direções
