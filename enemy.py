@@ -2,10 +2,8 @@ import pygame
 import random
 
 class Enemy:
-    def __init__(self, screen_width, screen_height):
-        images = ["enemy1.png", "enemy2.png", "enemy3.png"]
-        self.image = pygame.image.load(random.choice(images))
-        self.image = pygame.transform.scale(self.image, (70, 70))  # Redimensiona para 30x30
+    def __init__(self, screen_width, screen_height, enemy_images):
+        self.image = random.choice(enemy_images)
         spawn_side = random.choice(["left", "right"])
         if spawn_side == "left":
             self.rect = self.image.get_rect(left=0, top=random.randint(0, screen_height - 50))
@@ -26,8 +24,8 @@ class Enemy:
 
 class BulletEnemy:
     def __init__(self, x, y):
-        self.image = pygame.image.load("tiroenemy.png")
-        self.image = pygame.transform.scale(self.image, (5, 5))  # Redimensiona para 5x5
+        self.image = pygame.image.load("tiroenemy.png").convert_alpha()
+        self.image = pygame.transform.scale(self.image, (5, 5))
         self.rect = self.image.get_rect(center=(x, y))
         self.speed = 5
 
