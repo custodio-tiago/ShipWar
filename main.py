@@ -14,7 +14,7 @@ FONT = pygame.font.Font(None, 36)
 
 # Inicialização
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Ship War 1.0")
+pygame.display.set_caption("ShipWar2)
 clock = pygame.time.Clock()
 
 # Fundo do jogo
