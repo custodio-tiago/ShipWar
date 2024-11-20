@@ -2,7 +2,7 @@ import pygame
 import sys
 import random
 from player import Player
-from enemy import Enemy
+from enemy import Enemy  # Agora o Enemy está importado corretamente
 
 pygame.init()
 
@@ -23,11 +23,11 @@ background = pygame.transform.scale(background, (WIDTH, HEIGHT))
 
 # Pré-carregar imagens
 enemy_images = [pygame.image.load(f"enemy{i}.png").convert_alpha() for i in range(1, 4)]
-enemy_images = [pygame.transform.scale(img, (70, 70)) for img in enemy_images]
+enemy_images = [pygame.transform.scale(img, (70, 70)) for img in enemy_images]  # Ajuste do tamanho da imagem
 
 # Game loop
 def main():
-    player = Player(WIDTH // 2, HEIGHT - 100)  # Ajustado para manter centralizado com novo tamanho
+    player = Player(WIDTH // 2, HEIGHT - 70)
     enemies = []
     bullets = []
     enemy_bullets = []
@@ -55,7 +55,7 @@ def main():
         spawn_timer += delta_time
         if spawn_timer >= random.randint(1000, 3000) and len(enemies) < 15:
             spawn_timer = 0
-            enemies.append(Enemy(WIDTH, HEIGHT, enemy_images))
+            enemies.append(Enemy(WIDTH, HEIGHT, enemy_images))  # Não é mais necessário passar "direction", o inimigo decide isso
 
         # Atualizar e desenhar objetos
         if not game_over:

@@ -3,7 +3,7 @@ import pygame
 class Player:
     def __init__(self, x, y):
         self.image = pygame.image.load("player.png").convert_alpha()
-        self.image = pygame.transform.scale(self.image, (70, 70))
+        self.image = pygame.transform.scale(self.image, (70, 70))  # Tamanho atualizado
         self.rect = self.image.get_rect(center=(x, y))
         self.speed = 5
 
@@ -27,7 +27,7 @@ class Player:
 class Bullet:
     def __init__(self, x, y):
         self.image = pygame.image.load("tiroplayer.png").convert_alpha()
-        self.image = pygame.transform.scale(self.image, (5, 5))
+        self.image = pygame.transform.scale(self.image, (5, 5))  # Tamanho do tiro
         self.rect = self.image.get_rect(center=(x, y))
         self.speed = -7
 
