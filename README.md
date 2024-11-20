@@ -1,5 +1,5 @@
-# ShipWar
-Jogo de naves que fiz com Python (pygame)
+# ShipWar2
+Continuação do primeiro jogo, agora com Python (pygame)
   
 ![image](https://github.com/user-attachments/assets/6f83dc7a-8aad-4039-973f-0bb5047bb322)
 
