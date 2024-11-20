@@ -12,8 +12,6 @@ Continuação do primeiro jogo, agora com Python (pygame)
 - sistema de pontuação
 
 ## Créditos de mídia
-Imagens de https://www.vecteezy.com/, autores: madzolo, ap301805665560,sadikart  
+Imagens de madzolo, ap301805665560,sadikart  
 <a href="https://www.vecteezy.com/free-png/transparent-spaceship">Transparent Spaceship PNGs by Vecteezy</a>  
-<a href="https://www.vecteezy.com/free-png/transparent-spaceship">Transparent Spaceship PNGs by Vecteezy</a>  
-<a href="https://www.vecteezy.com/free-png/transparent-spaceship">Transparent Spaceship PNGs by Vecteezy</a>  
-<a href="https://www.vecteezy.com/free-png/transparent-spaceship">Transparent Spaceship PNGs by Vecteezy</a>
+
