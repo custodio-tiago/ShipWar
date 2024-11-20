@@ -23,11 +23,11 @@ background = pygame.transform.scale(background, (WIDTH, HEIGHT))
 
 # Pré-carregar imagens
 enemy_images = [pygame.image.load(f"enemy{i}.png").convert_alpha() for i in range(1, 4)]
-enemy_images = [pygame.transform.scale(img, (30, 30)) for img in enemy_images]
+enemy_images = [pygame.transform.scale(img, (70, 70)) for img in enemy_images]
 
 # Game loop
 def main():
-    player = Player(WIDTH // 2, HEIGHT - 70)
+    player = Player(WIDTH // 2, HEIGHT - 100)  # Ajustado para manter centralizado com novo tamanho
     enemies = []
     bullets = []
     enemy_bullets = []
@@ -105,7 +105,7 @@ def main():
             e_bullet.draw(screen)
 
         # Pontuação e Game Over
-        score_text = FONT.render(f"Score: {score}", True, (0, 0, 0))
+        score_text = FONT.render(f"Score: {score}", True, (255, 255, 255))
         screen.blit(score_text, (10, 10))
 
         if game_over:
