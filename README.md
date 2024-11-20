@@ -10,3 +10,10 @@ Continuação do primeiro jogo, agora com Python (pygame)
 - 3 tipos de inimigos complicam a vida do jogador, cada um com velocidade de movimento e frequência de tiro diferentes e que recompensam pontos diferentes  
 - colisão do tiro do inimigo ou do jogador com o inimigo dá game over
 - sistema de pontuação
+
+## Créditos de mídia
+Imagens de https://www.vecteezy.com/, autores: madzolo, ap301805665560,sadikart  
+<a href="https://www.vecteezy.com/free-png/transparent-spaceship">Transparent Spaceship PNGs by Vecteezy</a>  
+<a href="https://www.vecteezy.com/free-png/transparent-spaceship">Transparent Spaceship PNGs by Vecteezy</a>  
+<a href="https://www.vecteezy.com/free-png/transparent-spaceship">Transparent Spaceship PNGs by Vecteezy</a>  
+<a href="https://www.vecteezy.com/free-png/transparent-spaceship">Transparent Spaceship PNGs by Vecteezy</a>
