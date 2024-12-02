@@ -1,5 +1,5 @@
 # ShipWar2
-Huahua achou que tinha escapado dos alienígenas? Nada! Continuação do primeiro jogo, agora com Python (pygame)
+Achou que tinha escapado dos alienígenas? Que nada. Continuação do primeiro jogo, agora com Python (pygame)
   
 ![image](https://github.com/user-attachments/assets/6f83dc7a-8aad-4039-973f-0bb5047bb322)
 
